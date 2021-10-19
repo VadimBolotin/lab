@@ -1,0 +1,477 @@
+@media(max-width:1285px){
+  .slider-btn{
+    // display: none;
+  }
+}
+@media(max-width:1230px){
+  .job__card{
+    max-width: 345px;
+    display: flex;
+    margin-right: 34px;
+    &-img{
+      margin-right: 16px;
+      margin-bottom: 4px;
+    }
+    &:nth-child(1){
+      margin-right: 88px;
+      margin-bottom: 32px;
+    }
+    &:nth-child(2){
+      margin-right: 0;
+      margin-bottom: 32px;
+    }
+    &:nth-child(3){
+      margin-right: 88px;
+    }
+}
+}
+@media(max-width:1080px){
+  .three__content{
+    padding-top: 80px;
+    &-title{
+      font-size: 24px;
+      line-height: 33px;
+    }
+    &-text{
+      max-width: 457px;
+    }
+  }
+  .user{
+    padding: 50px 0;
+    &__inner{
+      flex-direction: column;
+      align-items: center;
+    }
+    &__left{
+      margin-right: 0;
+      // margin-bottom: 20px;
+    }
+    &__left-box{
+      max-width: 728px;
+      height: 245px;
+      margin-bottom: 40px;
+      &:first-child{
+        height: 190px;
+      }
+      &:last-child{
+        margin-bottom: 40px;
+      }
+    }
+    &__right-box{
+      max-width: 728px;
+      height: 245px;
+      margin-bottom: 40px;
+      &:last-child{
+        height: 190px;
+        margin-bottom: 0px;
+      }
+    }
+    &__box{
+      &-title{
+        margin-bottom: 46px;
+      }
+    }
+  }
+}
+@media(max-width:960px){
+  .questions__item-text{
+    max-width: 737px;
+  }
+}
+@media(max-width:900px){
+  .three__content{
+    padding-top: 20px;
+    margin-right: 29px;
+    &-title{
+      font-size: 17px;
+      line-height: 24px;
+    }
+    &-text{
+      max-width: 347px;
+      max-width: 457px;
+    }
+  }
+}
+@media(max-width:840px){
+  .containe-mail{
+    max-width: 757px;
+  }
+  .mail__input{
+    width: 351px;
+    margin-right: 24px;
+  }
+  .mail__number{
+    width: 351px;
+  }
+  .mail__box-btn{
+    padding: 20px 123px;
+  }
+}
+@media(max-width:815px){
+  .job__card:nth-child(1){
+    margin-right: 34px;
+  }
+  .job__card:nth-child(3){
+    margin-right: 34px;
+  }
+}
+@media(max-width:769px){
+  .menu{
+    z-index: 3;
+  }
+  .logo__text{
+    transition: all .4s;
+    &--active{
+      color: #000;
+    }
+  }
+  .menu__list{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgb(255, 255, 255);
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+
+    transform: translateY(-1000%);
+    transition: transform .3s;
+    &--active{
+    transform: translateY(0%);
+    overflow: auto;
+    }
+    
+  }
+  .menu__list-item{
+    color: #83898F;
+    margin: 0 16px;
+    padding: 16px 0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    border-top: 1px solid #ECEFF2;
+    border-bottom: 1px solid #ECEFF2;
+    position: relative;
+    & + .menu__list-item{
+      margin-left: 16px;
+    }
+    &::after{
+      position: absolute;
+      width: 24px;
+      height: 24px;
+      content: '';
+      background-image: url(../img/arrow-right.svg);
+      background-repeat: no-repeat;
+      right: -16px;
+      top: 50%;
+      bottom: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 3;
+    }
+  }
+  .menu__btn{
+    display: block;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 0;
+    cursor: pointer;
+  }
+  .menu__btn::before{
+    content: '';
+    position: absolute;
+    width: 22px;
+    height: 2px;
+    display: block;
+    background-color: #fff;
+    transition: transform .3s;
+  }
+  .menu__btn-line{
+    width: 22px;
+    display: block;
+    height: 2px;
+    background-color: #fff;
+    transition: opacity 1s;
+    margin-top: 8px;
+    transition: transform .3s;
+  }
+  .menu__btn.menu__btn--active{
+    .logo__text{
+      color: #000;
+    }
+    .menu__btn-line{
+      transform: translateY(-5px) rotate(-135deg);
+      background:#000;
+    }
+    &::before{
+      transform: translateY(3px) rotate(135deg);
+      background:#000;
+    }
+  }
+  .header__top{
+    margin-top: 317px;
+    &-title{
+      font-size: 32px;
+      line-height: 40px;
+      max-width: 463px;
+    }
+    &-text{
+      font-size: 16px;
+      line-height: 28px;
+      max-width: 476px;
+      margin-bottom: 40px;
+    }
+    &-button{
+      padding-bottom: 398px;
+    }
+  }
+  .job__card:nth-child(1){
+    margin-right: 0;
+  }
+  .job__card:nth-child(3){
+    margin-right: 0;
+    margin-bottom: 32px;
+  }
+  .job__card:nth-child(4){
+    margin-right: 0;
+  }
+  .job{
+    padding: 54px 0;
+    &__title{
+      font-size: 24px;
+      line-height: 24px;
+      margin-bottom: 26px;
+    }
+  }
+  .three__inner{
+    flex-direction: column;
+  }
+  .three__img{
+    order: 1;
+    text-align: center;
+    img{
+      width: 80%;
+    }
+  }
+  .three__content{
+    order: 2;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .reviews .slick-dots button{
+    margin: 0 10px;
+  }
+  .footer{
+    padding-top: 40px;
+  }
+  .questions__item-text{
+    max-width: 681px;
+  }
+  .questions{
+    padding: 56px 0;
+  }
+  .user{
+    padding: 20px 0;
+  }
+  .containe-mail{
+    max-width: 375px;
+  }
+  .mail{
+    padding: 56px 0;
+  }
+  .mail__form-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .mail__input{
+    width: 343px;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .mail__number{
+    width: 343px;
+  }
+  .mail__box{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .mail__box-chek{
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
+  .mail__box-btn{
+    margin-right: 0;
+  }
+  .mail__title{
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+@media(max-width:600px){
+  .user__left-box:first-child,
+  .user__right-box:last-child {
+    height: 246px;
+  }
+  .user__left-box,
+  .user__right-box{
+    height: 300px;
+  }
+}
+@media(max-width:565px){
+  .reviews .slick-dots button{
+    margin: 0 7px;
+  }
+  .questions__item-text{
+    max-width: 417px;
+  }
+}
+@media(max-width:490px){
+  .header__top{
+    margin-top: 92px;
+    &-title{
+      font-size: 26px;
+      line-height: 37px;
+      max-width: 350px;
+    }
+    &-text{
+      max-width: 288px;
+    }
+    &-btn{
+      margin-bottom: 172px;
+    }
+  }
+  .three__content-text{
+    max-width: 342px;
+  }
+  .reviews__item-box{
+    width: 321px;
+  }
+  .reviews .slick-dots button{
+    margin: 0 6px;
+  }
+  .questions__item-text{
+    max-width: 299px;
+  }
+  .user__left-box:first-child,
+  .user__right-box:last-child {
+    height: 300px;
+  }
+  .user__left-box,
+  .user__right-box{
+    height: 442px;
+  }
+  .user__box-title{
+    margin-bottom: 14px;
+  }
+  .mail__title{
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .containe-mail{
+    max-width: 356px;
+  }
+  .mail__box-btn{
+    padding: 20px 112px;
+  }
+}
+@media(max-width:376px){
+  .header__top{
+    margin-top: 48px;
+    &-title{
+      font-size: 24px;
+      line-height: 32px;
+      max-width: 288px;
+    }
+    &-text{
+      margin-bottom: 26px;
+    }
+    &-btn{
+      margin-bottom: 129px;
+    }
+    &-button{
+      padding-bottom: 172px;
+    }
+  }
+  .three__content-text{
+    max-width: 288px;
+  }
+  .reviews__item-box{
+    width: 264px;
+  }
+  .footer{
+    padding-top: 27px;
+  }
+  .questions__item-text{
+    max-width: 288px;
+  }
+  .user__left-box:first-child,
+  .user__right-box:last-child {
+    height: 358px;
+  }
+  .user__left-box,
+  .user__right-box{
+    height: 498px;
+  }
+  .mail__input {
+    width: 288px;
+  }
+  .mail__number{
+    width: 288px;
+  }
+  .mail__box-btn{
+    padding: 20px 91px;
+  }
+  .containe-mail{
+    max-width: 308px;
+  }
+}
+@media(max-width:320px){
+  .header__top{
+    &-title{
+      max-width: 250px;
+      
+    }
+    &-btn{
+      font-size: 16px;
+      line-height: 22px;
+    }
+    &-button{
+      padding-bottom: 129px;
+    }
+  }
+  .reviews__item-box{
+    width: 225px;
+    height: 430px;
+  }
+  .reviews .slick-dots button{
+    margin: 0 3px;
+  }
+  .questions__item-text{
+    max-width: 216px;
+  }
+  .user__left-box:first-child,
+  .user__right-box:last-child {
+    height: 450px;
+  }
+  .user__left-box,
+  .user__right-box{
+    height: 614px;
+  }
+  .mail__input {
+    width: 237px;
+  }
+  .mail__number{
+    width: 237px;
+  }
+  .mail__box-btn{
+    padding: 20px 67px;
+  }
+  .containe-mail{
+    max-width: 254px;
+  }
+}

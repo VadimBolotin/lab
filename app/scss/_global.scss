@@ -1,0 +1,42 @@
+html{
+  box-sizing: border-box;
+  scroll-behavior: smooth; // для плавног скрола
+}
+*,
+*::before,
+*::after{
+  box-sizing: inherit;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+ul,li{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+input,
+button{
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+}
+p{
+  margin: 0;
+  padding: 0;
+}
+h1,h2,h3,h4,h5,h6{
+  margin: 0;
+  font-size: inherit;
+}
+.container{
+  max-width: 1236px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+body{
+  font-family: 'GraphikLCG', sans-serif;
+  font-weight: 400;
+}
